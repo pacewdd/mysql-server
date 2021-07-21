@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  mysql:
+    image: "mysql/mysql-server"
+    restart: 'always'
+    ports:
+      - '${LOCAL_MYSQL_PORT}:3306'
+    volumes: 
+      - ${LOCAL_MYSQL_DATA_DIR}:${MYSQL_DATA_DIR}
+    env_file:
+      - ${LOCAL_ENV_FILE}
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: ${MYSQL_ALLOW_EMPTY_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_HOST: '%'
+networks: 
+  default: 
+    name: phpdev
