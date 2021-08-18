@@ -12,9 +12,8 @@ Download Docker Desktop here: [https://www.docker.com/products/docker-desktop](h
 
 * Download a zip archive of this repository.  I recommend putting it somewhere that is not backed up by OneDrive or Dropbox... there will be a lot of changing files, and syncing with a backup service could slow your system.
 
-* Copy the `env_example` file to `.env`.
 
-* The default settings in `env_example` should work just fine.  Simply save the file as `.env`
+* The default settings in `docker-compose.yml` should work just fine, but you can edit this file if you need to.
 
 * You have a `persist` folder inside this folder, where all the database files from the container will be saved.  Even if the container is destroyed, your data will be preserved
 
@@ -54,6 +53,12 @@ If you install MySQLWorkbench (Highly recommended!), a MySQL Monitor client is i
 
 ```
 C:\Windows\Program Files\MySQL\MySQLMonitor
+```
+
+In Mac, edit `/etc/paths` and add the path to the MySQLWorkbench MacOS folder.
+
+```
+/Applications/MySQLWorkbench.app/contents/MacOS
 ```
 
   
