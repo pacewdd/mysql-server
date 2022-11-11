@@ -26,7 +26,7 @@ Download Docker Desktop here: [https://www.docker.com/products/docker-desktop](h
 
 * After the image downloads and the container builds and runs (could take 2 minutes for first run), check the Docker Desktop dashboard.  You should see something like this:
 
-![](https://pacewdd.b-cdn.net/blog/screenshot.jpg)
+![](https://73d7ee5cf3d33ba6c54d-02c37edeb863bbff92ffd1f4f4d94138.ssl.cf2.rackcdn.com/screenshot.jpg)
 
 * To use this container with PHP and Apache, you also need to download the WDD PHP/Apache2 Container and follow the instructions in its README files.
 
